@@ -1,0 +1,217 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+/* :root {
+  --primary-color: #21201f;
+  --second-color: #644b31;
+} */
+.theme2 {
+  background-color: #644b31 !important;
+}
+
+/* this is for the theme change */
+.dawa-change {
+  background-color: red;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.calc-Title {
+  display: flex;
+  gap: 1rem;
+}
+i {
+  color: aliceblue;
+}
+.closing {
+  cursor: pointer;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.calculator-wrapper {
+  width: 452px;
+  height: 552px;
+  background-color: #21201f;
+  border-radius: 15px;
+  border: 2px solid antiquewhite;
+}
+.calc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0.5rem auto 1rem;
+  font-size: 0.85rem;
+}
+.closing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.calc-header .closing span {
+  width: 4rem;
+  height: 1.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.calc-header .closing span:last-child {
+  background-color: red;
+  font-size: 0.5rem !important;
+  padding-top: 4px;
+  font-weight: 800;
+}
+.calc-header .closing span:first-child {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.calc-header .closing span:first-child:hover {
+  background-color: rgb(63, 63, 63);
+}
+.calc-header .closing span:last-child:hover {
+  background-color: rgb(105, 19, 19);
+}
+
+.writting-area {
+  width: 98%;
+  margin: 0.5rem auto;
+  height: 145px;
+  padding: 2rem;
+  position: relative;
+}
+.writting-area input {
+  background-color: transparent;
+  border: 0;
+  height: 5rem !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2.95rem;
+  font-weight: 550;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.279);
+  width: 90%;
+  margin-left: 1rem;
+}
+.writting-area .tempWriting {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+.writting-area input:focus {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.keypads div {
+  cursor: pointer;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6 {
+  width: 98.5%;
+  height: 55px;
+  margin: 2.5px auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.65%;
+}
+
+.row-1 div,
+.row-2 div,
+.row-3 div,
+.row-4 div,
+.row-5 div,
+.row-6 div {
+  width: 24.25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333231;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.row-1 div:hover,
+.row-2 div:hover,
+.row-3 div:hover,
+.row-4 div:hover,
+.row-5 div:hover,
+.row-6 div:hover {
+  background-color: transparent;
+  /* border-top: 1px solid white; */
+  border-radius: 0;
+  font-size: 2rem !important;
+}
+
+.key-21,
+.key-22,
+.key-23,
+.key-17,
+.key-18,
+.key-19,
+.key-13,
+.key-14,
+.key-15,
+.key-9,
+.key-10,
+.key-11 {
+  background-color: #3c3b39 !important;
+  font-size: 1.25rem !important;
+  font-weight: 700;
+}
+
+.row-6 .key-24 {
+  background-color: #4cc2ff;
+}
+.row-6 .key-24:hover {
+  background-color: #2497d1 !important;
+}
+
+.key-21:hover,
+.key-22:hover,
+.key-23:hover,
+.key-17:hover,
+.key-18:hover,
+.key-19:hover,
+.key-13:hover,
+.key-14:hover,
+.key-15:hover,
+.key-9:hover,
+.key-10:hover,
+.key-11:hover {
+  border: 2px solid white;
+  background-color: #323232 !important;
+}
+
+/* hidder */
+.hidden {
+  visibility: hidden;
+}
+.collapsed {
+  height: 2.5rem !important;
+  border-radius: 0 !important;
+}
+
+/* body on close */
+.bodyOnClose {
+  color: black;
+  text-align: center;
+}

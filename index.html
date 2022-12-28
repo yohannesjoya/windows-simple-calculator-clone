@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- link to style design from windows 11 standard calculator -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Disclaimer the inline through styled elements are not temporarily working -->
+    <div class="calculator-wrapper">
+        <div class="calc-header">
+            <div class="calc-Title">
+                <p><b>Standard Calculator</b></p>
+                <div class="dawa-change">Theme</div>
+            </div>
+            <div class="closing">
+                <span class="minimize"><i>-</i></span>
+                <span class="close"><i>X</i></span>
+            </div>
+        </div>
+        <div class="writting-area">
+            <p class="tempWriting"> </p>
+            <input type="text">
+        </div>
+        <div class="keypads">
+            <div class="row-1">
+                <div class="key-1 typable">%</div>
+                <div class="key-2 clearingKeys">CE</div>
+                <div class="key-3 clearingKeys">C</div>
+                <div class="key-4 Dell"><small>Dell</small></div>
+            </div>
+            <div class="row-2">
+                <div class="key-5 typable">(</div>
+                <div class="key-6 typable">)</div>
+                <div class="key-7 typable">x <sup>0.5</sup></div>
+                <div class="key-8 typable">/</div>
+            </div>
+            <div class="row-3">
+                <div class="key-9  typable">7</div>
+                <div class="key-10 typable">8</div>
+                <div class="key-11 typable">9</div>
+                <div class="key-12 typable">*</div>
+            </div>
+            <div class="row-4">
+                <div class="key-13 typable">4</div>
+                <div class="key-14 typable">5</div>
+                <div class="key-15 typable">6</div>
+                <div class="key-16 typable">-</div>
+            </div>
+            <div class="row-5">
+                <div class="key-17 typable">1</div>
+                <div class="key-18 typable">2</div>
+                <div class="key-19 typable">3</div>
+                <div class="key-20 typable">+</div>
+            </div>
+            <div class="row-6">
+                <div class="key-21" style="  text-decoration:line-through;"><small>+/-</small></div>
+                <div class="key-22 typable">0</div>
+                <div class="key-23 typable">.</div>
+                <div class="key-24 equal">=</div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- this is Custom script -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
